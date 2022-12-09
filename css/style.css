@@ -1,3 +1,61 @@
+.dsa0{
+    top:12.5rem; 
+    right: -7rem;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+}
+.dsa0 button{ 
+    display: flex;
+      width: 9rem;
+    height: 1.8rem;
+    border-right: #f3f3f3;
+    background-color:transparent;
+}
+.dsa0 button i{
+    margin-right: .6rem;
+    margin-top: 3px;
+} 
+.dsa1 button i{
+    margin-right: .5rem;
+    margin-top: 3px;
+} 
+.dsa1 button{ 
+    display: flex;
+      width: 9rem;
+    height: 1.8rem;
+    border-right: #f3f3f3;
+    background-color: transparent;
+}
+.dsa1:hover{
+    right: 0;
+    background-color: rgb(255, 93, 93);
+    
+} 
+.dsa0:hover{
+    right: 0;
+    background-color: rgb(255, 93, 93);
+    
+} 
+.dsa1{
+    top: 10rem; 
+    right: -7rem;
+
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    background-color: #fff;
+ 
+}
+.dsa0 button p{
+    font-size: small;
+    
+}
+.dsa1 button p{
+    font-size: small;
+    
+}
 .navbar {
 
     background-color: transparent;
@@ -25,7 +83,7 @@
     
     
     }
-    .icon2 a{
+    .navbar .icon2 a{
         margin:0  .5rem;
     }
     
@@ -36,7 +94,7 @@
         position: relative;
         padding:0 .3rem;
     }
-    .v-sep::before{
+   .v-sep::before{
         content: "";
         position: absolute;
         left: 0;
@@ -44,7 +102,7 @@
         height: 16px;
         border-left: 1px solid rgb(255, 255, 255,.5);
     }
-    .icon{
+     .navbar.icon{
         padding: 0 4rem;
     }
     .par{
@@ -52,7 +110,7 @@
         text-align: center;
         justify-content: center;
     }
-    .carousel-item{
+    #hero .carousel-item{
         height: 100vh;
         overflow: hidden;
     }
@@ -62,7 +120,32 @@
         
         
     }
-    
+    #hero, #hero .carousel-item {
+        height: 100vh;
+        overflow: hidden;
+    }
+    #hero .carousel-item img {
+        object-fit: cover;
+        height: 100%;
+    }
+    #hero .carousel-caption {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    #hero .carousel-indicators [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+    }
+    #hero .carousel-item {
+        cursor:w-resize;}
     .sec02{
         
         
@@ -79,37 +162,38 @@
         background-position: 50% 100%;
 
     }
-    .bht{
+    .sec2 .bht{
         font-size: 2rem;
         font-weight: bold;
         
        
         
     }
-    .par0{
+     .sec2 .par0{
         margin-top: 7rem;
        text-align: left;
     }
-    .sec02 par0  i,p{
+    .sec02 .par0  i,p{
         text-align: left;
 
     }
-    .lrm{
+    .sec2 .lrm{
         padding-top: 1rem;
         width: 37rem;
         color: rgb(109, 108, 108);
     }
-    .fact{
+     .sec2 .fact{
         margin-top: 2rem;
         text-align: left;
     }
-    .fact p{
+     .sec2 .fact p{
         font-size: xx-large;
         color: rgb(237, 85, 85);
        
 
     }
-    .fact span{
+   
+     .sec2 .fact span{
         color: rgb(136, 129, 129);
     }
     .fadd h3{
@@ -121,14 +205,14 @@
         text-align: center;
         color: rgb(138, 134, 134);
     }
-    .fadd1{
+    .sec02 .fadd1{
         margin-top: 6rem;
     }
     .fadd h3{
         color: #000;
         text-align: center;
     }
-    .fet1{
+    .sec02 .fet1{
         margin: 1rem;
         width: 20%;
         height: 22rem;
@@ -137,14 +221,14 @@
         box-sizing:border-box;
         
     }
-    .ttt1{
+    .sec02 .ttt1{
         display: flex;
        
         justify-content: center;
         margin-top: 3rem ;
         margin-bottom: 1.5rem;
     }
-    .fet1 p{
+    .sec02 .fet1 p{
         display: flex;
         width:5rem ;
         height: 5rem;
@@ -157,17 +241,17 @@
         text-align: center ;
         
     }
-    .fet1 span{
+    .sec02 .fet1 span{
         color: #a0a0a0;
        
     }
     
-    .trt1{
+    .sec3 .trt1{
         width: 25%;
         height: 65vh;
         box-sizing:border-box !important;
     }
-    .tr1{
+    .sec3 .tr1{
         width: 25%!important;;
         height: 65vh;
         background-image: url(../images/homepage-option17-image-01.jpg);
@@ -179,22 +263,22 @@
         box-sizing:border-box !important;
     }
 
-    .tt1{
+    .sec3 .tt1{
         width: 75%;
         margin-left: 12.5%;
         
     }
     
-    .tt1 h6,h4{
+    .sec3 .tt1 h6,h4{
         color: rgb(255, 255, 255);
         margin-bottom: 0;
         text-align: left;
     }
-    .tt1 p{
+    .sec3 .tt1 p{
         margin-top: 1.2rem ;
         color: rgb(137, 137, 137);
     }
-    .tr2{
+    .sec3 .tr2{
         background-image: url(../images/homepage-option17-image-02.jpg);
         width: 25%;
         height: 65vh;
@@ -205,11 +289,11 @@
         background-repeat: no-repeat !important;
         box-sizing:border-box !important;
     }
-    .tt1 button{
+    .sec3 .tt1 button{
      
         margin-top: 1.2rem;
     }
-    .tt1 h6{
+    .sec3 .tt1 h6{
         color: rgb(137, 137, 137);
         margin-top: 3rem;
         margin-bottom: 1.5rem;
@@ -225,38 +309,41 @@
     .sec05{
         height:55vh;
     }
-    .trt11 span{
+    .sec5 .trt11 span{
         color: #000;
         text-align: left;
         margin-bottom: 1.5rem;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         width: 100%;
        
     }
-.ptp2{
+    .sec5 i{
+        margin-right: .5rem;
+    }
+.sec5 .ptp2{
     text-align: left;
     width: 80%
     
 }
-.ptp2 hr{
+.sec5 .ptp2 hr{
     margin-top: -.7rem;
 }
-.ptp2 p{
+.sec5 .ptp2 p{
     color: rgb(128, 125, 125);
     margin-top: 1rem;
 }
-.ptp2 button:hover{
+.sec5 .ptp2 button:hover{
     background-color: aliceblue;
 
 }
-.btnd{
+.sec5 .btnd{
     background-color: #000;
     border-color: #000;
     border-radius: 5px;
     color: white;
     height: 2.5rem;
 }
-.btnd:hover
+.sec5 .btnd:hover
 {
     background-color: transparent;
     border-color: #000;
@@ -269,11 +356,7 @@
    
     background-color: #a0a0a0;
 }
-.cont row{
-margin: 0!important;
-width: 100%!important;
-box-sizing: border-box!important;
-}
+
 .cont img{
     width: 100hv;
     height: 100vh;
@@ -282,82 +365,106 @@ box-sizing: border-box!important;
     
 }
 
-.photo{
-    max-width: 100%;
+.sec4 .photo{
+    width: 100%;
     padding: 5px;
     box-sizing: border-box;
     
    
 }
 
- .photo item0{
+ .sec4 .photo .item0{
+ 
     margin:3px;
     display: flex;
-    width:25%;
+    position: relative;
     flex-wrap: wrap;
-   
-    padding-bottom: 5px;
+   height: 100%;
+    bottom: 0px;
+    width: 24%;
     
    
  }
- .links{
+
+ .sec4 .links{
     justify-content: center;
     text-transform: uppercase;
     
+    
  }
- .links a{
+ .sec4 .links a{
     color: rgb(103, 99, 99);
     padding: 2rem;
     
    
  }
- .item0 img{
+ 
+ .sec4 .item0 img{
     width: 100%;
     overflow: hidden;
     flex-wrap: wrap;
-   
+   position: absolute;
     background-repeat: no-repeat;
+    box-sizing: border-box;
    
     
  }
+
+ 
+ .sec4 .itm-p{
+    
+    background-color: #fff;
+    width: 100%;
+    height: 40vh;
+    margin: 1rem;
+    box-sizing: border-box;
+ 
+}
+.sec4 .itm-p0{
+    margin-top: 13rem;
+}
+.sec4 .itm-p p,pre{
+    text-align: center;
+    
+}
+.sec4 .row{
+    margin: 2rem 0 !important;
+}
  .sec6{
     width: 100%;
     height: 90vh;
     background-color: #f3f3f3;
     margin-top: 5rem;
-    overflow-x: hidden;
+    overflow: hidden;
  }
- .itm-p{
-    position: absolute!important;
- }
- .img0{
+ 
+ 
+ .sec6 .img0{
     width: 100%;
     height: 90vh;
-    position: relative;
+   
  }
- .par{
+ .sec6 .par{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     margin: 3rem;
     
  }
- .par h3 {
+ .sec6 .par h3 {
     width:100%;
-    
     font-size: 3rem;
-    padding:  -3rem;
-    margin-top: -7rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     text-align: left;
 }
-  .par i{
+  .sec6 .par i{
     font-size: 3rem;
   }
-  .par div{
+  .sec6 .par div{
     padding: .5rem;
   }
-  .p-lorem{
+  .sec6 .p-lorem{
     font-size:small;
     color: #a0a0a0;
   }
@@ -374,13 +481,14 @@ box-sizing: border-box!important;
  .sec7-par h2,p{
     text-align: center;
  }
- .sec7 p{
+ .sec7 p {
     color: #a0a0a0;
-    
+    text-align: center;
  }
  .sec7 hr{
     width: 8%;
     color: red;
+    margin-bottom: 4rem;
     
     margin-left: 46%;
     font-weight: bold;
@@ -394,8 +502,15 @@ box-sizing: border-box!important;
     color: #a0a0a0;
     
  }
- .sec8 par1{
-    width: 75%;
+ .sec007 .text-black{
+    text-align: center;
+ }
+ .sec7 .col-4{
+    margin:0 -2.5rem !important;
+ }
+ .sec8 .row{
+    margin-left: 5rem !important;
+    margin-top: 7rem !important;
  }
  .sec8 {
     margin-top: 5rem;
@@ -405,20 +520,21 @@ box-sizing: border-box!important;
     width: 100%;
     overflow: hidden;
 }
-.img-lab{
+.sec8 .img-lab{
     width: 100%;
 }
-.par01 h1{
+.sec8 .par01 h1{
     width: 100%;
 }
-.par01{
+.sec8 .par01{
     width: 75%;
-    margin-top: 15%;
+    
 }
-.par1 >p>i{
-    color: red;
+.sec8 .par1 p>i{
+    color: rgb(230, 31, 31);
+    margin-right: .5rem;
 }
-.par1 p,hr{
+.sec8 .par1 p,hr{
     text-align: left;
     color: #a0a0a0;
 }
@@ -529,6 +645,9 @@ margin-bottom: .5rem
     .sec10 .row .xrow>.btnf{
         margin-top: 2rem;
     }
+    .sec11  .row{
+        margin-left: 5rem;
+     }
     .sec11 .sec011 i{
         font-size: 3rem;
         margin-right: .5rem;
@@ -547,6 +666,9 @@ margin-bottom: .5rem
         margin-top: 8rem;
         margin-bottom: 1rem;
     }
+    .sec12 .iconn:hover{
+        transform: scale(1.3 ,1.3);
+    }
     .sec12{
         
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -560,12 +682,13 @@ margin-bottom: .5rem
         background-repeat: no-repeat;
         
     }
-    .sec012 p{
+    .sec12 .sec012 p{
         margin-top: 2rem;
         margin-bottom:3rem;
         color: rgb(177, 177, 177);
+        text-align: center;
     }
-    .sec012{
+    .sec12 .sec012{
         
         text-align: center;
         color:rgb(219, 219, 219);
@@ -587,25 +710,366 @@ margin-bottom: .5rem
         border-color: #fff;
         color: #fff;
     }
+   .sec13 div
+{
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    .sec13 ul
+{
+    list-style: none;
+    margin-bottom: 0px;
+}
+.sec13 p
+{
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #828282;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+.sec13 p a
+{
+    display: inline;
+    position: relative;
+    color: inherit;
+    border-bottom: solid 1px #ffa07f;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+.sec13 a, a:hover, a:visited, a:active, a:link
+{
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+.sec13 p a:active
+{
+    position: relative;
+    color: #FF6347;
+}
+.sec13 p a:hover
+{
+    color: #FFFFFF;
+    background: #ffa07f;
+
+}
+.sec14 {
+    background-color: #e2e2e2;
+    height: 110vh;
+    margin-top: 4rem;
+}
+
+.sec14 .sec14-par {
+   padding-top: 5rem;
+}
+.sec14 .sec14-par h2{
+    text-align: center;
+ }
+ .sec14 .sec14-par> p{
+    color: #a0a0a0;
+    font-size: small;
+    text-align: center;
+    
+ }
+ .sec14 .sec14-par>hr{
+    width: 8%;
+    color: red;
+    
+    margin-left: 46%;
+    font-weight: bold;
+ }
+ 
+ .sec14 .sec14-par2  {
+    padding-top: 3rem;
+ }
+ .sec14 .sec14-par2 .imgrt0 {
+    margin-left: 8.5rem;
+   
+ }
+ .sec14 .sec14-par2 .imgrt {
+   
+    width: 7.5rem;
+    height: 7.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+   display: flex;
+   align-items: center;
+   margin-bottom: 1rem;
+ }
+ 
+ .sec14-par002{
+    
+    width: 95%;
+    background-color: white;
+    height: 30rem;
+    text-shadow: #797676;
+ }
+ .sec14 .par-12 p{
+    color: #a0a0a0;
+    text-align: center;
+ }
+ .sec14 .par-12 h6{
+    margin-top: 2rem;
+ }
+ .sec14 .par-12 span{
+color: #a0a0a0;
+font-size: small;
+ }
+ .sec14 .par-12{
+    width: 70%;
+    margin-left: 15%;
+ }
+
     .sec15{
         margin-top: 8rem;
     }
+    .sec15 .sec15-par{
+        margin-bottom: 7rem;
+    }
 
-    .sec15-par h2,p{
+    .sec15-par h2{
         text-align: center;
      }
-     .sec15 p{
+     .sec15-par p{
         color: #a0a0a0;
         font-size: small;
+        text-align: center;
         
      }
      .sec15 .sec15-par h2{
         margin-top: -.5rem;}
-     .sec15 hr{
+     .sec15 .sec15-par>hr{
         width: 8%;
         color: red;
         
         margin-left: 46%;
         font-weight: bold;
      }
+    .sec15 img{
+        width: 100%;
+    }
+    .sec15 .das0{
+        overflow: hidden;
+    }
+     .sec15 img:hover{
+       
+        filter: opacity(60%);
+        transform:scale(110%);
+        backface-visibility: hidden;
+        transition: all 0.2s ease-out;
+}
+
+     
+    .sec15 .container {
+        padding: 0 7rem ;
+    }
+    .sec15 .container .row .col-3> p{
+        color: rgb(108, 108, 108);
+        font-size: small;
+    }
+    .sec15 .container .row .col-3> pre,a,p{
+        text-align: left;
+    }
+    .sec15 .container .row pre{
+        margin-top: 1rem;
+        font-size: small;
+        color:#797676;
+       
+    }
+    .sec15 .container .row pre>a{
+        color: #797676;
+        text-decoration: none;
+
+    }
+    .sec15 .container .row a:hover{
+color: red;
+
+    }
+    .sec15 .container .row .col-3>a{
+        color: #000;
+        text-decoration:none;
+    }
+    .sec15 .container .row .col-3>a:hover{
+        color: red;
+    }
+    .sec16 {
+        margin-top: 5rem;
+    }
+    .sec16 .sec16_par1{
+        height: 7rem;
+        background-color: #000;
+
+    }
+    .sec16 .sec16_par1 p{
+        color: #a0a0a0;
+        font-size: small;
+        text-align: center;
+        
+    }
+    .sec16 .sec16_par1 i{
+        color: #fff;
+        margin:0 .7rem;
+    }
+    .sec16 .sec16_par1 i:hover{
+        color: red;
+    }
     
+  
+    .sec16 .sec16_par1 .container .row .col-4{
+
+        margin-top: 3rem;
+    }
+    .sec16 .sec16_par2{
+        background-color:rgb(24, 24, 24);
+        height: 58vh;
+    }
+    .sec16 .sec16_par2 .container{
+        padding-top:  4rem;
+    }
+    .sec16 .sec16_par2 .sec16-par02  img{
+        width: 20%;
+        height: 75%;
+    }
+    .sec16 .sec16_par2 .sec16-par02 a{
+        color: #797676;
+        text-decoration: none;
+    }
+    .sec16 .sec16_par2 .sec16-par02 a:hover{
+        color: red;
+    }
+    .sec16 .sec16_par2 .sec16-par02 pre{
+        color: #797676;
+        padding: .1rem .5rem;
+        text-align: left;
+        font-size: small;
+    }
+    .sec16 .sec16_par2 .sec16-par02 hr{
+        margin-top: -.1rem;
+        width: 90%;
+    }
+    .sec16 .sec16_par2 .container .row .sec16-par12 img{
+        width: 100%; 
+        padding-bottom: 1.5rem;
+    }
+    .sec16 .sec16_par2 .container .row  h6{
+        color: #8d8d8d;
+        text-align: left;
+        margin-bottom: 1.5rem;
+
+    }
+    .sec16 .sec16_par2 .container .row p{
+        color: #636161;
+        font-size: small;
+        
+        margin-bottom: 2rem;
+    }
+    .sec16 .sec16_par2 .container .row> hr{
+        margin: 2rem 0;
+    }
+    .sec16 .sec16_par2 .container .row p>a{
+        text-decoration: none;
+        color: #7f7d7d;
+    }
+    .sec16 .sec16_par2 .container .row p>a:hover{
+        color: red;
+   
+    }
+    
+    .sec16 .sec16-par12 img:hover{
+        transform: scale(1.1,1.1);
+    }
+    
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 220px;
+    perspective: 1000px;
+    margin-left: 11rem;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #fff;
+    color: rgb(255, 255, 255);
+  }
+  
+  .flip-card-back {
+    background-color: #ff5500;
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+  }
+  .flip-card-back p{
+    margin-top: 5rem;
+  }
+  .sec13 {
+    margin-top: 5rem;
+    width: 60% ;
+    margin-left: 20%;}
+.sec7  .col-4>pre{
+    
+    margin-left: 18rem;
+  }
+  .sec4_p{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .xas1{
+display: flex;
+width: 25%;
+height: 20rem;
+box-sizing: border-box;
+}
+.xas1 .xs1{
+margin-top: 14rem;
+ width: 100%;
+}
+.xas1 .xs1 >h6 ,.xas1 .xs1 >p{
+  text-transform: uppercase;
+   text-align: center;
+}
+.xas1 img{
+    position: absolute;
+    width: 25%;
+    padding: 1rem;
+    position: 0 100% ;
+    box-sizing: border-box;
+
+}
+.xas1 img:hover{
+    height:30%;
+   
+}
